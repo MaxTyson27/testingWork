@@ -1,0 +1,10 @@
+mixin menu
+  nav.menu
+    ul.menu__list
+      each value, index in {'О ГК “АУДИТ-ВЕЛА”': 'about', 'УСЛУГИ': 'services', 'КОНТАКТЫ': 'contacts'}
+        li.menu__list-item 
+          a.menu__list-link(href="#" + value)= index
+      li.numbers
+        a(href="tel:88002018037") 8-800-201-80-37
+        a(href="tel:88632017244") 8 (863) 201-72-44
+        

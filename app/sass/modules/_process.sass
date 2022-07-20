@@ -1,0 +1,261 @@
+.process
+  background-color: $primary
+  padding-top: 50px
+  padding-bottom: 100px
+  +bgp('../images/result.png', contain, bottom 70px, center)
+  &__text
+    font-weight: 700
+    color: $dark-blue
+    margin-bottom: 30px
+    +fz(13px, 19px)
+    span
+      color: #ffffff
+      font-weight: 400
+  &__items
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 10px
+    margin: 0
+    margin-bottom: 20px
+  &__item
+    max-width: 145px
+    padding: 10px
+    border-radius: 5px
+    border: 2px solid transparent
+    border-image: linear-gradient(180deg, #5D2A8D 0%, #0052B3 100%)
+    border-image-slice: 1
+    &-text
+      color: #fff
+      text-align: center
+      +fz(14px, 20px)
+      word-wrap: break-word
+
+.result
+  padding-top: 20px
+  &__title
+    font-weight: 700
+    color: #fff
+    +fz(13px, 19px)
+    margin-bottom: 60px
+    text-align: center
+    span
+      font-weight: 400
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 10px
+    margin: 0
+  &__item
+    text-align: center
+    color: #fff
+    background: rgba(14, 23, 48, 0.6)
+    backdrop-filter: blur(10px)
+    max-width: 145px
+    padding-bottom: 30px
+    &:last-child
+      max-width: 100%
+      width: 100%
+      p
+        max-width: 230px
+        margin: 0 auto
+    &-title
+      text-transform: uppercase
+      color: $purple-titles
+      margin-bottom: 20px
+    &-text
+      +fz(13px, 18px)
+  &__circle
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background: linear-gradient(147.26deg, #32426E 10.62%, #5D2A8D 96.65%)
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    transform: translateY(-50%)
+    img
+      max-width: 20px
+
+@media(min-width: '480px')
+  .process
+    &__text
+      +fz(22px, 30px)
+
+    &__item
+      max-width: 225px
+      &-text
+        +fz(14px, 20px)
+  .result
+    &__title
+      +fz(18px, 25px)
+    &__item
+      max-width: 225px
+      &-title
+        color: $purple-titles
+        margin-bottom: 20px
+      &-text
+        +fz(13px, 18px)
+        padding: 0 10px
+
+@media(min-width: '768px')
+  .process
+    &__text
+      +fz(30px, 40px)
+      max-width: 600px
+    &__items
+      justify-content: space-between
+    &__item
+      max-width: 350px
+      width: 100%
+      padding-bottom: 40px
+      &-text
+        +fz(22px, 35px)
+        max-width: 250px
+        margin: 0 auto
+  .result
+    &__title
+      +fz(30px, 40px)
+    &__list
+      justify-content: space-between
+    &__item
+      max-width: 359px
+      width: 100%
+      &:last-child
+        p
+          max-width: 460px
+      &-title
+        +fz(25px, 35px)
+      &-text
+        +fz(25px, 35px)
+        max-width: 280px
+        margin: 0 auto
+
+@media(min-width: '1080px')
+  .process
+    padding-top: 147px
+    padding-bottom: 178px
+    &__text
+      +fz(48px, 59px)
+      max-width: 846px
+      margin-bottom: 79px
+    &__items
+      justify-content: space-between
+      column-gap: 29px
+      row-gap: 26px
+      margin-bottom: 26px
+    &__item
+      max-width: 444px
+      width: 100%
+      height: 435px
+      padding-bottom: 40px
+      border-radius: 17px
+      border: none
+      +bgp('../images/border.svg', contain, top, center)
+      &:nth-last-child(-n+2)
+        height: 673px
+        +bgp('../images/border1.svg', contain, top, center)
+      &-text
+        padding-top: 53px
+        +fz(36px, 50px)
+        max-width: 358px
+  .result
+    padding-top: 25px
+    &__title
+      +fz(40px, 49px)
+      margin-bottom: 135px
+    &__list
+      justify-content: space-between
+      column-gap: 40px
+      row-gap: 20px
+    &__circle
+      width: 105px
+      height: 105px
+      img
+        max-width: 45px
+    &__item
+      max-width: 444px
+      padding-bottom: 88px
+      &:last-child
+        max-width: 100%
+        padding-bottom: 66px
+        p
+          max-width: 570px
+      &-title
+        +fz(36px, 44px)
+        margin-bottom: 31px
+      &-text
+        +fz(36px, 50px)
+        max-width: 327px
+
+@media(min-width: '1250px')
+  .process
+    background-color: $primary
+    padding-top: 89px
+    padding-bottom: 181px
+    +bgp('../images/result-lg.png', contain, left, bottom 250px)
+    .container
+      max-width: 1295px
+    &__text
+      margin-bottom: 52px
+      +fz(30px, 37px)
+      max-width: 100%
+      text-align: center
+    &__items
+      display: flex
+      justify-content: center
+      row-gap: 0
+      column-gap: 19px
+      margin-bottom: 43px
+    &__item
+      max-width: 304px
+      padding: 37px 20px 10px 20px
+      height: 275px
+      +bgp('../images/border-lg.svg', contain, top, center)
+      &:last-child
+        p
+          max-width: 243px
+      &:nth-last-child(-n+2)
+        height: 275px
+        +bgp('../images/border-lg.svg', contain, top, center)
+      &-text
+        padding-top: 0
+        +fz(18px, 25px)
+        word-wrap: break-word
+        max-width: 265px
+    &__image
+      margin: 0 auto
+      max-width: 1100px
+      width: 100%
+  .result
+    padding-top: 35px
+    &__title
+      +fz(30px, 37px)
+      margin-bottom: 80px
+    &__list
+      gap: 0
+      column-gap: 35px
+      max-width: 1250px
+      margin: 0 auto
+    &__item
+      max-width: 393px
+      padding-bottom: 60px
+      &:last-child
+        max-width: 393px
+        padding-bottom: 60px
+        p
+          max-width: 295px
+      &-title
+        +fz(18px, 22px)
+        margin-bottom: 29px
+      &-text
+        +fz(18px, 22px)
+        max-width: 295px
+        padding: 0
+    &__circle
+      width: 93px
+      height: 93px
+      img
+        max-width: 40px

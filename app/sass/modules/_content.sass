@@ -1,0 +1,163 @@
+.content
+  background-color: $bg-accent
+  padding-top: 30px
+  padding-bottom: 50px
+  +bgp('../images/secretary.png', 150px, right, bottom)
+  &__title
+    +fz(25px, 35px)
+    color: #ffffff
+    font-weight: 700
+    margin-bottom: 20px
+  &__text
+    color: $blue
+    margin-bottom: 35px
+    +fz(16px, 22px)
+  &__bottom
+    display: none
+    display: flex
+    column-gap: 44px
+    align-items: center
+    margin: 0
+    color: #fff
+    font-weight: 700
+    text-align: center
+    &-item
+      max-width: 371px
+      width: 100%
+      height: 147px
+      background: rgba(255, 255, 255, 0.1)
+      backdrop-filter: blur(24px)
+      padding-top: 40px
+    &-text
+      +fz(18px, 22px)
+      max-width: 225px
+      margin: 0 auto
+.form
+  &__box
+    display: none
+    margin-bottom: 30px
+  &__title
+    +fz(18px, 22px)
+    color: #ffffff
+    font-weight: 700
+    margin-bottom: 5px
+  &__text
+    +fz(18px, 22px)
+    color: #ffffff
+    max-width: 508px
+  &__input
+    width: 100%
+    height: 50px
+    background: rgba(255, 255, 255, 0.4)
+    backdrop-filter: blur(24px)
+    border: none
+    padding: 0 10px
+    margin-bottom: 15px
+    display: block
+    color: #fff
+    &::placeholder
+      color: #fff
+      +fz(16px, 18px)
+  &__btn
+    background-color: $btn
+    width: 100%
+    height: 50px
+    color: #ffffff
+    font-weight: 700
+    border: none
+    cursor: pointer
+
+@media(min-width: '480px')
+  .content
+    background-size: 200px
+    &__title
+      +fz(25px, 35px)
+      max-width: 370px
+    &__text
+      +fz(20px, 30px)
+      max-width: 380px
+  .form
+    &__input,
+    &__btn
+      height: 60px
+
+@media(min-width: '768px')
+  .content
+    background-size: 250px
+    background-position: top 50px right
+    &__title
+      +fz(40px, 50px)
+      max-width: 510px
+    &__text
+      +fz(30px, 40px)
+      max-width: 500px
+  .form
+    &__input,
+    &__btn
+      width: 700px
+      height: 70px
+
+@media(min-width: '1080px')
+  .content
+    padding-top: 55px
+    padding-bottom: 110px
+    background-size: contain
+    background-position: top 240px right
+    &__title
+      +fz(70px, 85px)
+      max-width: 721px
+      margin-bottom: 50px
+    &__text
+      +fz(40px, 49px)
+      max-width: 665px
+      margin-bottom: 74px
+  .form
+    &__input,
+    &__btn
+      width: 931px
+      height: 150px
+    &__input
+      margin-bottom: 35px
+      padding: 0 50px
+      +fz(40px, 49px)
+      &::placeholder
+        +fz(40px, 49px)
+    &__btn
+      +fz(40px, 49px)
+
+@media(min-width: '1250px')
+  .content
+    background-color: none
+    padding-top: 104px
+    padding-bottom: 0
+    +bgp('../images/content-bg.jpg', cover, top, center)
+    position: relative
+    &__title
+      +fz(30px, 37px)
+      margin-bottom: 28px
+      max-width: 731px
+    &__text
+      margin-bottom: 20px
+      +fz(24px, 29px)
+      max-width: 571px
+    &__bottom
+      transform: translateY(24px)
+      display: flex
+      position: relative
+      z-index: 5
+  .form
+    margin-bottom: 50px
+    &__box
+      display: block
+    &__input
+      width: 582px
+      height: 65px
+      padding: 0 33px
+      margin-bottom: 21px
+      +fz(18px, 22px)
+      &::placeholder
+        +fz(18px, 22px)
+    &__btn
+      width: 582px
+      height: 65px
+      +fz(18px, 22px)
